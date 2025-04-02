@@ -1,5 +1,5 @@
 {% set name = "mecademicpy" %}
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mecademicpy-{{ version }}.tar.gz
-  sha256: 5418681a4ea2c5dd42ad0cfdb6ccd3b3bdfdd85e6a05b23aa0b2083dd2c38fc8
+  sha256: 972818826671af54d4222b840315fb067f3f2f4f657d3cf381e785f34b25d261
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
